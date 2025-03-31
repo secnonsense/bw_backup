@@ -8,6 +8,6 @@ This script uses fabric to connection to your bitwarden unified server using SSH
 
 After backing up to another server, a verification function is run to confirm the files exists and if so sends a notification via slack webhook (slack webhook url must be saved in a file called .slack in the running users home directory).
 
-Also added backup to s3 bucket, where bucketname variable needs to define the user's s3 bucket, and the user needs to have defined aws tokens in their home directory as used with AWS CLI.  This will backup the files to a folder in the s3 bucket called backup. Webhook notifications will be sent upon backup or failure.
+Also added backup to s3 bucket, where bucketname variable needs to define the user's s3 bucket, and the user needs to have defined aws tokens in their home directory as used with AWS CLI.  This will backup the files to a folder in the s3 bucket called backup. Webhook notifications will be sent upon backup or failure. Requires boto3 and botocore.exceptions. 
 
 
